@@ -1,5 +1,6 @@
 package br.com.fiap.carsproject.model.entity;
 
+import br.com.fiap.carsproject.model.entity.dto.CarRequestDTO;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -27,5 +28,16 @@ public class Car {
     private String licensePlate;
 
     private String brand;
+
+    private String year;
+
+    public Car(CarRequestDTO carRequestDTO){
+        this.motor = carRequestDTO.getMotor();
+        this.name = carRequestDTO.getName();
+        this.color = carRequestDTO.getColor();
+        this.licensePlate = carRequestDTO.getLicensePlate();
+        this.brand = carRequestDTO.getBrand();
+        this.year = carRequestDTO.getYear();
+    }
 
 }
