@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <head>
     <meta charset="utf-8">
-    <title>Visualizar produtos</title>
+    <title>Visualizar Carros</title>
 </head>
 <body>
 <div class="container mt-3">
@@ -20,6 +20,7 @@
             <th>Color</th>
             <th>License Plate</th>
             <th>Brand</th>
+            <th>Year</th>
         </tr>
         </thead>
         <tbody>
@@ -28,6 +29,7 @@
             <td th:text="${car.getColor()}">Color</td>
             <td th:text="${car.getLicensePlate()}">License Plate</td>
             <td th:text="${car.getBrand()}">Brand</td>
+            <td th:text="${car.getYear()}">Year</td>
         </tr>
         </tbody>
     </table>
