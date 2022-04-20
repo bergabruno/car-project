@@ -1,5 +1,11 @@
 # car-project
 Trabalho para faculdade
+
+End-Points:
+http://localhost:8090/api/v1/car
+http://localhost:8090/api/v1/filme
+
+
 INTEGRANTES:
 
 
